@@ -1,6 +1,6 @@
 const express = require('express');
 const notes = require('./db/db.json');
-
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 // api routes 
@@ -16,6 +16,6 @@ app.get('/api/notes', (req, res) => {
 // GET /notes should return the notes.html file
 // GET * should return the index.html file
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
     console.log(`API server now on port 3001!`);
   });
