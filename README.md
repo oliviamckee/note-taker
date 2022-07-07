@@ -10,7 +10,7 @@ I created this note taking app using Node.JS and the Express.js application.
 - [Questions](#questions)
 
 ## Installation
-Navigate to the deployed [heroku page]() to begin taking notes. 
+Navigate to the deployed [heroku page](https://radiant-stream-53083.herokuapp.com/) to begin taking notes. 
 
 ## Usage 
 To add a note, click on the + icon in the top right corner. To save a note, click on the save icon in the top right corner. 
