@@ -1,7 +1,7 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "I created this note taking app using Node.JS and the Express application.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliviamckee/note-taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/oliviamckee/note-taker/issues"
+  },
+  "homepage": "https://github.com/oliviamckee/note-taker#readme"
 }
