@@ -29,7 +29,7 @@ app.get('/api/notes', (req, res) => {
 });
 
     // POST /api/notes should receive a new note to save on the request body, add it to the db, json file, then return the new note to the client 
-    // find a way to give each note a unique id when it's saved (look into npm packages that could do this) ... or copy module.... ??? 
+    // find a way to give each note a unique id when it's saved (look into npm packages that could do this) ... or copy module.... ??? oooo it matters if i do the delete thing, well... 
 app.post('/api/notes', (req, res) => {
     req.body.id = notes.length.toString();
     const note = createNewNote(req.body, notes)
@@ -45,6 +45,14 @@ app.get('/notes', (req, res) => {
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
+
+// delete route
+// app.delete('/api/notes/:id', (req, res) => {
+//     let results = notes;
+//     results = results.filter(note => note.id !== req.params.id);
+//     res.json(results);
+// });
+
 
 app.listen(PORT, () => {
     console.log(`API server now on port 3001!`);
