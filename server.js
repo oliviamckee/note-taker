@@ -1,5 +1,5 @@
 const express = require('express');
-const notes = require('./db/db.json');
+const { notes } = require('./db/db.json');
 const fs = require('fs');
 const path = require('path');
 
@@ -28,7 +28,7 @@ app.get('/api/notes', (req, res) => {
     res.json(results);
 });
 
-    // POST /api/notes should receive a new note to save on the request body, add it ot the db, json file, then return the new note to the client 
+    // POST /api/notes should receive a new note to save on the request body, add it to the db, json file, then return the new note to the client 
     // find a way to give each note a unique id when it's saved (look into npm packages that could do this) ... or copy module.... ??? 
 app.post('/api/notes', (req, res) => {
     req.body.id = notes.length.toString();
